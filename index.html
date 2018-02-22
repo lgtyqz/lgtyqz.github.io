@@ -2,8 +2,12 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue" rel="stylesheet">
         <title>Bamboozled again</title>
         <style>
+            body {
+                overflow-x: hidden;
+            }
             #bait {
                 height: 100%;
             }
@@ -24,6 +28,7 @@
             #actual {
                 position: absolute;
                 top: 100%;
+                left: 0%;
                 width: 100%;
                 height: 500%;
                 border-left: 5px solid black;
@@ -33,6 +38,7 @@
                 font-family: 'EB Garamond', serif;
                 font-size: 60px;
                 width: 100%;
+                padding: 0px 50px 0px 50px;
                 text-align: center;
             }
             #subtitle {
@@ -40,18 +46,66 @@
                 font-size: 20px;
                 width: 100%;
                 text-align: center;
+                padding: 0px 50px 0px 50px;
             }
             .sectionTitle {
                 font-family: 'EB Garamond', serif;
                 font-size: 40px;
                 width: 100%;
+                padding: 20px 50px 20px 50px;
                 text-align: center;
                 background-color: #EEEEEE;
             }
             .project {
+                font-family: 'EB Garamond', serif;
+                width: 100%;
+                font-size: 40px;
+                text-align: center;
+                color: #555555;
+                padding: 50px 50px 50px 50px;
+                transition: all 0.5s ease;
+            }
+            .project:hover {
+                font-family: 'EB Garamond', serif;
+                width: 100%;
+                font-size: 50px;
+                color: black;
+                text-align: center;
+                padding: 50px 50px 50px 50px;
+            }
+            .description {
+                font-family: 'EB Garamond', serif;
                 width: 100%;
                 text-align: center;
-                margin: 50px 50px 50px 50px;
+                font-size: 25px;
+                color: #777777;
+            }
+            .subheader {
+                font-family: 'Helvetica Neue', sans-serif;
+                width: 100%;
+                color: #777777;
+                font-size: 12px;
+            }
+            .percent {
+                font-family: 'Helvetica Neue', sans-serif;
+                color: #777777;
+                font-size: 12px;
+                width: 10%;
+            }
+            #diggy {
+                /*background-image: url("pinimg.png");*/
+            }
+            #ettky {
+                /*background-image: url("pinimg.png");*/
+            }
+            #mapsim {
+                /*background-image: url("pinimg.png");*/
+            }
+            #abaw {
+                /*background-image: url("pinimg.png");*/
+            }
+            #lsd {
+                /*background-image: url("pinimg.png");*/
             }
         </style>
         <script>
@@ -63,6 +117,7 @@
             <h1 class="lol">error 404</h1>
             <hr>
             <h2 class="lol">page not found lol</h2>
+            <h6 class="lol">i am not very good at computer plz to help</h6>
         </div>
         <div id="prompter">scroll down ↓</div>
         <div id="actual">
@@ -72,23 +127,72 @@
             <!--
             TODO: Add descriptions, hover effects, percentage completion, hyperlinks
             -->
-            <div class="sectionTitle">
-                Current Projects
-            </div>
+            <div class="sectionTitle">Current Projects</div>
             <div class="project" id="diggy">
-                Diggy.html
+                Down We Go
+                <div class="description">
+                    A roguelike that anyone can pick up and understand.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">85% COMPLETE</span> - 
+                    [ GAMEPLAY COMPLETE, NEEDS MORE TUTORIALS, BACKSTORY, AND MENUS. ]
+                </div>
             </div>
             <div class="project" id="ettky">
                 Hello, World
+                <div class="description">
+                    A JS platformer, set in a wide open world for you to explore.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">60% COMPLETE</span> - 
+                    [ NEEDS GRAPHICS, SFX, MUSIC, ETC. AS WELL AS A COMPLETE WORLD ]
+                </div>
             </div>
             <div class="project" id="mapsim">
                 MAP Test Simulator
+                <div class="description">
+                    A tool to help special-ed students with standardized test prep.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">10% COMPLETE</span> - 
+                    [ MAP SIM COMPLETE, GRADUATED DIFFICULTY SYSTEM NEEDS LOTSA WORK ]
+                </div>
             </div>
             <div class="project" id="abaw">
                 Anti-Bullying App
+                <div class="description">
+                    An anonymous bullying reporting system that will help reduce bullying in schools.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">15% COMPLETE</span> - 
+                    [ PLANNING AND DATA COLLECTION MOSTLY COMPLETE. UI JUST NEEDS TO BE BUILT. ]
+                </div>
             </div>
             <div class="project" id="lsd">
                 ＴＲＩＰ．ＯＵＴ
+                <div class="description">
+                    A casual rhythm game with surreal, otherworldly graphics.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">15% COMPLETE</span> - 
+                    [ MAKING MORE ANIMATIONS, PLANNING RHYTHM & OTHER IMMERSION ELEMENTS ]
+                </div>
+            </div>
+            <div class="project" id="neuro">
+                Python Neuroevolution
+                <div class="description">
+                    An attempt at using neuroevolution for machine learning in platform games.
+                </div>
+                <div class="subheader">
+                    <br>
+                    <span class="percent">40% COMPLETE</span> - 
+                    [ RIP, NO SUCCESS YET ]
+                </div>
             </div>
         </div>
     </body>
