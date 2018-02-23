@@ -23,6 +23,7 @@
                 font-size: 20px;
                 font-family: "Comic Sans MS", sans-serif;
                 border: 5px solid black;
+                text-align: center;
                 background-color: white;
             }
             #actual {
@@ -33,6 +34,7 @@
                 height: 500%;
                 border-left: 5px solid black;
                 border-right: 5px solid black;
+                background-color: white;
             }
             #title {
                 font-family: 'EB Garamond', serif;
@@ -109,7 +111,9 @@
             }
         </style>
         <script>
-            
+            function redirect(url){
+                window.location = url;
+            }
         </script>
     </head>
     <body>
@@ -128,7 +132,7 @@
             TODO: Add descriptions, hover effects, percentage completion, hyperlinks
             -->
             <div class="sectionTitle">Current Projects</div>
-            <div class="project" id="diggy">
+            <div class="project" id="diggy" onclick="redirect('lgtyqz.github.io/DownWeGo')">
                 Down We Go
                 <div class="description">
                     A roguelike that anyone can pick up and understand.
@@ -139,7 +143,7 @@
                     [ GAMEPLAY COMPLETE, NEEDS MORE TUTORIALS, BACKSTORY, AND MENUS. ]
                 </div>
             </div>
-            <div class="project" id="ettky">
+            <div class="project" id="ettky" onclick="redirect('lgtyqz.github.io/HelloWorld')">
                 Hello, World
                 <div class="description">
                     A JS platformer, set in a wide open world for you to explore.
@@ -150,7 +154,7 @@
                     [ NEEDS GRAPHICS, SFX, MUSIC, ETC. AS WELL AS A COMPLETE WORLD ]
                 </div>
             </div>
-            <div class="project" id="mapsim">
+            <div class="project" id="mapsim" onclick="redirect('https://github.com/lgtyqz/MAP-Test-Simulator')">
                 MAP Test Simulator
                 <div class="description">
                     A tool to help special-ed students with standardized test prep.
@@ -161,7 +165,7 @@
                     [ MAP SIM COMPLETE, GRADUATED DIFFICULTY SYSTEM NEEDS LOTSA WORK ]
                 </div>
             </div>
-            <div class="project" id="abaw">
+            <div class="project" id="abaw" onclick="redirect('https://github.com/lgtyqz/abaw')">
                 Anti-Bullying App
                 <div class="description">
                     An anonymous bullying reporting system that will help reduce bullying in schools.
@@ -172,7 +176,7 @@
                     [ PLANNING AND DATA COLLECTION MOSTLY COMPLETE. UI JUST NEEDS TO BE BUILT. ]
                 </div>
             </div>
-            <div class="project" id="lsd">
+            <div class="project" id="lsd" onclick="redirect('lgtyqz.github.io/LSD')">
                 ＴＲＩＰ．ＯＵＴ
                 <div class="description">
                     A casual rhythm game with surreal, otherworldly graphics.
@@ -183,7 +187,7 @@
                     [ MAKING MORE ANIMATIONS, PLANNING RHYTHM & OTHER IMMERSION ELEMENTS ]
                 </div>
             </div>
-            <div class="project" id="neuro">
+            <div class="project" id="neuro" onclick="window.location = lgtyqz.github.io/DownWeGo">
                 Python Neuroevolution
                 <div class="description">
                     An attempt at using neuroevolution for machine learning in platform games.
