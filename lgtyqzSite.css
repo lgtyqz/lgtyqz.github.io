@@ -9,15 +9,16 @@ body {
 }
 #prompter {
     position: fixed;
-    left: 45%;
-    top: 90%;
-    width: 10%;
+    left: 40%;
+    top: 80%;
+    width: 20%;
     height: auto;
     font-size: 20px;
     font-family: "Comic Sans MS", sans-serif;
     border: 5px solid black;
     text-align: center;
     background-color: white;
+    padding: 5px 5px 5px 5px;
 }
 #actual {
     position: absolute;
@@ -59,6 +60,7 @@ body {
     color: #555555;
     padding: 50px 50px 50px 50px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 .project:hover {
     font-family: 'EB Garamond', serif;
