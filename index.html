@@ -1,133 +1,386 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="lgtyqzSite.css">
-        <title>Bamboozled again</title>
-        <meta name="description" content="LGTYQZ's personal website. Visit https://lgtyqz.github.io/home for the page.">
-        <script>
-            function redirect(url){
-                window.location = url;
-            }
-            redirect("https://lgtyqz.github.io/home");
-        </script>
-    </head>
-    <body>
-        <div id="bait">
-            <h1 class="lol">error 404</h1>
-            <hr>
-            <h2 class="lol">page not found lol</h2>
-            <h6 class="lol">i am not very good at computer plz to help</h6>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>LGTYQZ's Lil Mansion</title>
+  </head>
+
+  <body>
+    <header id="primary-header">
+      <div id="header-left">
+        <div id="one-line-header">
+          <h1>Hi!</h1>
+          <h3>I'm LGTYQZ.</h3>
         </div>
-        <div id="prompter">scroll down ↓</div>
-        <div id="actual">
-            <div id="title">😂&nbsp;&nbsp;&nbsp;&nbsp;L G T Y Q Z&nbsp;&nbsp;&nbsp;&nbsp;😂</div>
-            <div id="subtitle">Your friendly neighborhood keyboard smasher.</div>
-                        <br><hr><br>
-            <!--
-            TODO: Add descriptions, hover effects, percentage completion, hyperlinks
-            -->
-            <!--
-            Dammit GitHub pages why you be like this
-            -->
-            <div class="sectionTitle">Current Projects</div>
-            <div class="project" id="smash" onclick="redirect('https://https://github.com/HHSProgrammingClub/smash-my-buttons')">
-                Code Fight!
-                <div class="description">
-                    A Smash Bros.-style fighting game where you control your characters using Python programming.<br>(This is a team project, by the way)
+
+        <h2>I'm a web developer.</h2>
+        <h4>Check out some of my projects below!</h4>
+      </div>
+      <div id="header-right">
+        <img id="header-logo-alt" src="./images/portfolio/nut-drawing.png" />
+      </div>
+    </header>
+
+    <main>
+      <section class="case-study" id="gambit-gardens">
+        <header>
+          <img
+            class="case-study-preview-image"
+            src="./images/portfolio/gambit-gardens-screenshot.png"
+          />
+          <div class="case-study-header">
+            <h2 class="case-study-title">Gambit Gardens</h2>
+            <h4 class="case-study-subtitle">
+              is a cute game about bidding strategy. Demo available on Steam
+              now!
+            </h4>
+            <h5 class="case-study-roles">
+              ROLES: Solo UX Designer, Artist, Composer, & Developer
+            </h5>
+            <a
+              href="https://store.steampowered.com/app/5081930/Gambit_Gardens/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              PLAY DEMO!
+            </a>
+            <button
+              type="button"
+              id="gambit-gardens-info-button"
+              class="more-info-button case-study-toggle"
+              aria-controls="gambit-gardens-article"
+              aria-expanded="false"
+            >
+              <image src="./images/portfolio/plus-button-icon.png"></image>
+              <span>VIEW CASE STUDY</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="case-study-article hidden" id="gambit-gardens-article" inert>
+          <div class="case-study-content">
+            <section class="article-section">
+              <h2 class="article-section-header">
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-left.png"
+                />
+                Background
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-right.png"
+                />
+              </h2>
+              <article>
+                <div class="figure-holder">
+                  <figure>
+                    <img
+                      src="./images/portfolio/discord-event-screenshot.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      The event setup, which I manually ran (in Figma)
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img
+                      src="./images/portfolio/tt-fanart.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      Fanart I received
+                    </figcaption>
+                  </figure>
                 </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">90% COMPLETE</span> - 
-                    [ JUST NEEDS UPGRADES FROM HERE ON OUT. ]
+                <p>
+                  I didn't play Monopoly until the ripe old age of 19. The game is
+                  fun with friends (even if the game does take forever), but I was
+                  introduced to rules where players auctioned for property, which
+                  was easily the most fun part of the game.
+                  <br /><br />
+                  This inspired me to create a strategy game based around
+                  auctioning called Turf Tactics (later renamed Gambit Gardens),
+                  which I held asynchronously for around 50 members on a discord
+                  server. The participants loved it so much they wanted me to make
+                  it real! So I set out to.
+                </p>
+              </article>
+            </section>
+
+            <section class="article-section">
+              <h2 class="article-section-header">
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-left.png"
+                />
+                The Process
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-right.png"
+                />
+              </h2>
+              <article>
+                <p>
+                  I envisioned this sort of game as a cutesy, casual party board
+                  game, something to play with friends on the go. As such, this
+                  was my first attempt at making something mobile-first (and on
+                  top of that, portrait orientation as it's generally most
+                  comfortable for users), which came with its own issues.
+                  <br /><br />
+                  The 6x6 board had to include a lot of key information, such as
+                  what plants were on the board, how many points they were worth,
+                  and so on.
+                  <br /><br />
+                  Furthermore users would have to be able to see what abilities
+                  ALL the plants in their hand and on the board had, which there's
+                  not a lot of room left for after the board is on the screen.
+                </p>
+                <div class="figure-holder">
+                  <figure>
+                    <img
+                      src="./images/portfolio/hand-drawn-prototype.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      Rough drafts, trying to figure out the layout.
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img
+                      src="./images/portfolio/old-cards-landscaper.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      Previous card designs, much too large to see all at once on
+                      a small screen!
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img
+                      src="./images/portfolio/artstyle-finagling.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      Messing with the artstyle.
+                    </figcaption>
+                  </figure>
                 </div>
-            </div>
-            <div class="project" id="shooter" onclick="redirect('https://lgtyqz.github.io/XINDEXIN')">
-                XINDEXIN
-                <div class="description">
-                    A fun and addictive arcade shmup about destroying waves of Chinese characters.<br>(Use the arrow keys to move your character and move over the button to begin.)
+              </article>
+            </section>
+
+            <section class="article-section">
+              <h2 class="article-section-header">
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-left.png"
+                />
+                The Results
+                <img
+                  class="header-stars"
+                  src="./images/portfolio/stars-right.png"
+                />
+              </h2>
+              <article>
+                <div class="figure-holder">
+                  <figure>
+                    <iframe
+                      class=""
+                      width="315"
+                      height="700"
+                      src="https://www.youtube.com/embed/n-iu2l6AhRs?si=Nkd0dwYp8YUvPqfH"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <figcaption class="image-caption">
+                      A demo video of one of the first betas.
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img
+                      src="./images/portfolio/refined-design-landscape.png"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      The new, simplified design.
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img
+                      src="./images/portfolio/Phlox-preview.gif"
+                      class="image-figure"
+                    />
+                    <figcaption class="image-caption">
+                      Plant animations!
+                    </figcaption>
+                  </figure>
                 </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">85% COMPLETE</span> - 
-                    [ GAMEPLAY COMPLETE, NEEDS QUALITY-OF-LIFE ENHANCEMENTS ]
-                </div>
-            </div>
-            <div class="project" id="diggy" onclick="redirect('https://lgtyqz.github.io/DownWeGo')">
-                Down We Go
-                <div class="description">
-                    A roguelike that anyone can pick up and understand.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">85% COMPLETE</span> - 
-                    [ GAMEPLAY COMPLETE, NEEDS MORE TUTORIALS, BACKSTORY, AND MENUS. ]
-                </div>
-            </div>
-            <div class="project" id="ettky" onclick="redirect('https://lgtyqz.github.io/helloWorld')">
-                Hello, World
-                <div class="description">
-                    A JS platformer, set in a wide open world for you to explore.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">60% COMPLETE</span> - 
-                    [ NEEDS GRAPHICS, SFX, MUSIC, ETC. AS WELL AS A COMPLETE WORLD ]
-                </div>
-            </div>
-            <div class="project" id="neuro" onclick="redirect('https://github.com/lgtyqz/Python-Neuroevolution')">
-                Python Neuroevolution 2
-                <div class="description">
-                    An attempt at using neuroevolution for machine learning in platform games.<br>
-                    Version 2 uses diploid organisms and an updated mating algorithm to better reflect biology.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">40% COMPLETE</span> - 
-                    [ FRAMEWORK COMPLETE, ALGORITHM NOT WORKING ]
-                </div>
-            </div>
-            <div class="project" id="mapsim" onclick="redirect('https://github.com/lgtyqz/MAP-Test-Simulator')">
-                MAP Test Simulator
-                <div class="description">
-                    A tool to help special-ed students with standardized test prep.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">10% COMPLETE</span> - 
-                    [ MAP SIM COMPLETE, GRADUATED DIFFICULTY SYSTEM NEEDS LOTSA WORK ]
-                </div>
-            </div>
-            <div class="project" id="abaw" onclick="redirect('https://github.com/lgtyqz/abaw')">
-                Anti-Bullying App
-                <div class="description">
-                    An anonymous bullying reporting system that will help reduce bullying in schools.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">5% COMPLETE</span> - 
-                    [ PLANNING AND DATA COLLECTION MOSTLY COMPLETE. UI JUST NEEDS TO BE BUILT. ]
-                </div>
-            </div>
-            <div class="project" id="lsd" onclick="redirect('https://lgtyqz.github.io/LSD')">
-                ＴＲＩＰ．ＯＵＴ
-                <div class="description">
-                    A casual rhythm game with surreal, otherworldly graphics.
-                </div>
-                <div class="subheader">
-                    <br>
-                    <span class="percent">40% COMPLETE</span> - 
-                    [ WOULD LIKE IMPLEMENTATION OF LOW-LAG AUDIO AND BETTER BPMS/MUSIC ]
-                </div>
-            </div>
-            <div class="sectionTitle">Music</div>
-            <div class="project" id="music" onclick="redirect('http://lgtyqz.bandcamp.com')">
-                <img src="bandcamp-logo.png" width="512px" height="148px">
-                <div class="description">
-                    Where I post my original music. Album dropping soon!
-                </div>
-            </div>
+                <p>
+                  Plant cards have three pieces of key info: Their icon, how many
+                  points they are, and what ability they have. I compressed their
+                  icon & points into a small, simplified box, and had them show
+                  their ability as a banner notification-like display when tapped.
+                  <br /><br />
+                  Alongside a myriad of other changes and changing the artstyle to
+                  have a more soft-border-like style, I was able to create a
+                  working demo for Gambit Gardens and have it tested by several
+                  dozen people via Discord.
+                  <br /><br />
+                  This also ended up being my first foray into both a LOT of
+                  vector art & animation. Check out the results on Steam!
+                </p>
+              </article>
+            </section>
+          </div>
+        </section>
+      </section>
+
+      <section class="case-study" id="rngdlelike">
+        <header>
+          <img
+            class="case-study-preview-image"
+            src="./images/portfolio/rngdlelike.png"
+          />
+          <div class="case-study-header">
+            <h2 class="case-study-title">RNGdlelike</h2>
+            <h4 class="case-study-subtitle">
+              is a small, bite-sized score attack roguelike based around the
+              popular web game RNGdle, featuring shared daily runs on the same
+              seed!
+            </h4>
+            <h5 class="case-study-roles">
+              ROLES: Solo UI/Game Designer, Developer, Composer
+            </h5>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lgtyqz.github.io/rngdlelike"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              PLAY NOW
+            </a>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-study" id="jiayou">
+        <header>
+          <img
+            class="case-study-preview-image"
+            src="./images/portfolio/jiayou.png"
+          />
+          <div class="case-study-header">
+            <h2 class="case-study-title">JIAYOU!</h2>
+            <h4 class="case-study-subtitle">
+              is a simple Kanban board for simple people, designed to be
+              friendly. No sign-ups, no feature bloat, just lists and cloud
+              syncing.
+            </h4>
+            <h5 class="case-study-roles">
+              ROLES: Solo UX Designer & Developer
+            </h5>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lgtyqz.github.io/jiayou/"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              OPEN SITE
+            </a>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-study" id="stock-duels">
+        <header>
+          <img
+            class="case-study-preview-image"
+            src="./images/portfolio/Stock-Duels.png"
+          />
+          <div class="case-study-header">
+            <h2 class="case-study-title">Stock Duels</h2>
+            <h4 class="case-study-subtitle">
+              was an online PvP collectible card game that uses free stock
+              images. Now offline, but the assets are still around!
+            </h4>
+            <h5 class="case-study-roles">
+              ROLES: Solo UX Designer & Developer
+            </h5>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.figma.com/design/aEazavINAdcpFcXXOO0gGd/Card-Design-pogger?node-id=0-1&t=zbmnROtE6uc62SzA-1"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              VIEW FIGMA FILES
+            </a>
+          </div>
+        </header>
+      </section>
+      <section id="older-projects">
+        <h2 id="older-projects-title">Older Projects</h2>
+        <div id="older-projects-holder" role="region" aria-labelledby="older-projects-title" tabindex="0">
+          <section class="older-project">
+            <img src="./images/xindexin.png" class="older-project-image" />
+            <h4 class="older-project-title">XINDEXIN</h4>
+            <p class="older-project-desc">
+              A shmup where everything is Chinese characters and your weapons
+              are random.
+            </p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lgtyqz.github.io/XINDEXIN"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              PLAY NOW
+            </a>
+          </section>
+          <section class="older-project">
+            <img src="./images/down-we-go.png" class="older-project-image" />
+            <h4 class="older-project-title">Down We Go</h4>
+            <p class="older-project-desc">
+              A roguelike about using walls to your advantage.
+            </p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lgtyqz.github.io/DownWeGo"
+              class="more-info-button"
+            >
+              <image src="./images/portfolio/new-page-button.png"></image>
+              PLAY NOW
+            </a>
+          </section>
         </div>
-    </body>
+      </section>
+    </main>
+  </body>
 </html>

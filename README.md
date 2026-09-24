@@ -1,3 +1,1 @@
-# lgtyqz.github.io
-
-f
+haha yes
